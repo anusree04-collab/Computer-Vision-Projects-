@@ -1,16 +1,16 @@
-# Face Detection using OpenCV 
+# Face Detection from Image using OpenCV 
 
-This project implements *real-time face detection* using a webcam and *Haar Cascade Classifier* in OpenCV.
+This project performs *face detection on a static image* using *Haar Cascade Classifier* in OpenCV.
 
-The system detects human faces from live video input and draws bounding boxes around detected faces.
+The program detects human faces present in an input image and draws bounding boxes around the detected faces.
 
 ---
 
-#  Project Overview
-- Uses Haar Cascade XML files for face detection
-- Works on live webcam video
-- Converts frames to grayscale for efficient detection
-- Draws rectangles around detected faces in real time
+##  Project Overview
+- Detects faces from an image (not live video)
+- Uses Haar Cascade XML file for face detection
+- Converts image to grayscale for better accuracy
+- Draws rectangles around detected faces
 
 ---
 
@@ -18,22 +18,23 @@ The system detects human faces from live video input and draws bounding boxes ar
 - Python
 - OpenCV
 - Haar Cascade Classifier
-- Computer Vision
+- Computer Vision (AI)
 
 ---
 
-##  Files Used
-- haarcascade_frontalface_default.xml – face detection model
-
-> Note: Haar cascade XML files are pre-trained models provided by OpenCV.
+## 🔹 Files Used
+- haarcascade_frontalface_default.xml – pre-trained face detection model
+- input_image.jpg – image used for face detection
 
 ---
 
-##  How It Works
-1. Captures video from the webcam
-2. Converts each frame to grayscale
-3. Detects faces using Haar Cascade classifier
+## 🔹 How It Works
+1. Reads an input image
+2. Converts the image to grayscale
+3. Applies Haar Cascade classifier to detect faces
 4. Draws bounding boxes around detected faces
-5. Displays the output video in real time
+5. Displays the output image with detected faces
 
 ---
+   pip install opencv-python
+
